@@ -1,0 +1,140 @@
+body {
+  margin: 0px;
+}
+
+header {
+  height: 620px ;
+  color: white;
+  background-image: url(sfondo.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 0.875em;
+  padding: 20px; 
+}
+
+#nome img{
+  width: 60px;
+  height: 60px;
+}
+
+#nome text{
+  font-size: 2em;
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+a.pulsante {
+  color: white;
+  border-radius: 100px;
+  border: 2px solid white;
+  padding: 10px 20px;
+  margin-right: 20px;
+}
+  
+a.pulsante:hover {
+  color: black;
+  background-color: white;
+}
+
+header h1 strong,
+.pulsante,
+#links {
+  font-family: 'Open Sans',sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+header h1 {
+  font-size: 1em;
+  line-height: 1.5; /*altezza della riga*/
+  font-weight: bold; /*grassetto*/
+  text-align: center;
+  z-index: 1;
+ } 
+  
+ h1 a.pulsante {
+  border: 0px;
+  background-color: rgb(179, 150, 54);
+  display: inline-block;
+}
+
+h1 a.pulsante:hover {
+  background-color: white;
+  color: black;
+}
+
+header h1 em {
+  font-size: 1.75em;
+  letter-spacing: 1px;
+}
+  
+header h1 strong {
+  font-size: 3.75em;
+  letter-spacing: 4px;
+}
+
+header h1 a {
+  font-size: 0.9em;
+}
+  
+#tendina {
+  display: none; /*menu a tendina non presente*/
+}
+  
+#tendina div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+  
+#links a {
+  margin: 15px; /*spazio tra i pulsanti in alto*/
+}
+  
+footer {
+  height: 93px;
+  background: Black;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+  
+footer strong{
+  font-size: .8em;
+}
+  
+footer p{
+  margin: 0px;
+  font-size: .7em;
+}

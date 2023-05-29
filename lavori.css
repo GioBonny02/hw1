@@ -1,0 +1,227 @@
+body {
+    margin: 0px;
+  }
+  
+  header {
+    height: 500px;
+    color: white;
+    background-image: url(sfondo.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 0.875em;
+    padding: 20px; 
+  }
+  
+  #nome img{
+    width: 60px;
+    height: 60px;
+  }
+  
+  #nome text{
+    font-size: 2em;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  a.pulsante {
+    color: white;
+    border-radius: 100px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin-right: 20px;
+  }
+    
+  a.pulsante:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  header h1 strong,
+  .pulsante,
+  #links {
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  #overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  header h1 {
+    font-size: 1em;
+    line-height: 1.5; /*altezza della riga*/
+    font-weight: bold; /*grassetto*/
+    text-align: center;
+    margin-top: 50px;
+    z-index: 1;
+   } 
+    
+  header h1 em {
+    font-size: 1.75em;
+    letter-spacing: 1px;
+  }
+    
+  header h1 strong {
+    font-size: 3.75em;
+    letter-spacing: 4px;
+  }
+    
+  #main p{
+    font-size: 2em;
+    color: white;
+    letter-spacing: 1px;
+  }
+
+  #tendina {
+    display: none; /*menu a tendina non presente*/
+  }
+    
+  #tendina div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+    
+  #links a {
+    margin: 15px; /*spazio tra i pulsanti in alto*/
+  }
+
+section{
+    margin:25px;
+    text-align: center;
+}
+
+#lista h2{
+    color: rgb(179, 150, 54);
+    font-style: italic;
+    font-size: 40px;
+}
+section p{
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.show-case{
+    width: 100%;
+	  display: flex;
+	  justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    width: 350px;
+    height: 250px;
+}
+
+.card p{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: rgb(179, 150, 54);
+}
+
+footer {
+    height: 100px;
+    background: Black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+    
+footer strong{
+    font-size: .8em;
+}
+    
+footer p{
+    margin: 0px;
+    font-size: .7em;
+}
+
+@media (max-width: 700px){
+  html{
+    font-size: 12px;
+  }
+  section{
+    width: 95%;
+  }
+  header {
+    height: 300px;
+    line-height: 1.2;
+  }
+  #nome text {
+    font-size: 1em;
+  }
+  #nome img {
+      width: 40px;
+      height: 40px;
+  }
+  header h1 strong {
+    font-size: 2em;
+    letter-spacing: 4px;
+  }
+  header h1 em {
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+  #main p{
+      font-size: 1.25em;
+  }
+  #links {
+    display: none;
+  }
+  #tendina {
+    display: block;
+  }
+  #lista h2{
+    font-size: 25px;
+  }
+section p{
+  font-size: 15px;
+}
+  .card img{
+    width: 250px;
+    height: 150px;
+  }
+  .card p{
+    font-size: 1.0rem;
+  }
+
+}
